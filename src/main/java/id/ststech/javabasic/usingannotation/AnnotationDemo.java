@@ -9,6 +9,7 @@ public class AnnotationDemo {
 	public static void main(String[] args) {
 
 		// Mendapatkan semua annotation dari class MyClass
+		// @DocInfo akan dikembalikan karena @Retention(RetentionPolicy.RUNTIME)
 		Annotation[] annotations = MyClass.class.getAnnotations();
 		
 		if(annotations != null) {
